@@ -4,20 +4,20 @@
 
 .heart-2 {
     font-size: 110px;
-    margin-top:130px;
+    margin-top:170px;
     animation:di 3s infinite alternate ease;
     color:#ffffff;
 }
 
 @keyframes di {
-    form {
+    0% {
         color:#ffffff;
         margin-left: 50px;
     }
-    to {
+    100% {
         color:pink;
         transform: rotate(360deg);
-        margin-left: 1000px;
+        margin-left: 900px;
     }   
 }
 

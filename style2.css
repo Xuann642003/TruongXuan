@@ -1,18 +1,6 @@
-.all1 {
-    position: absolute;
-    /* width:100%;
-    height: 100vh; */
-    margin-top:100px;
-    margin-left:140px;
-    width: 70%;
-    height: 70vh;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
 .navigation {
-    margin-top:20px;
-    margin-left:-800px;
+    margin-left:-1200px;
+    margin-top:-20px;
     z-index: 10;
     position:relative;
     display:flex;
@@ -70,18 +58,6 @@
     transition-delay:0s , 0.5s , 0.5s;
     border-bottom:red;
 }
-/* .menuToggle ~ .menu::before {
-    content:'';
-    position:absolute;
-    left:calc(50% - 8px);
-    bottom:4px;
-    width:16px;
-    height:16px;
-    transform:rotate(45deg);
-    background:#fff;
-    border-radius: 2px;
-    transition:0.5s;
-} */
 .menuToggle.active ~ .menu::before {
     transition-delay: 0.5s;
     bottom:-6px;
@@ -118,7 +94,7 @@
     text-decoration: none;
     color:#555;
 }
-.menu ul li i #ic1{
+.menu ul li p {
     display:block;
     font-size: 2em;
     text-decoration: none;
@@ -130,12 +106,18 @@
 .menu ul li:hover a {
     color:#e91e63;
 }
-
+.menu ul li:hover p {
+    color:#e91e63;
+}
 .menu ul li a i {
     display:flex;
     justify-content: center;
     align-items: center;
     margin:10px;
 }
-
-/* hienthi */
+.menu ul li p i {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}

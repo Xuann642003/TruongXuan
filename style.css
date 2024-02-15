@@ -39,7 +39,7 @@ h3{
     border-right: 2px solid blue;
     border-top: 2px solid red;
     border-bottom: 2px solid red;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     width: 70%;
     height: 70vh;
     text-align: center;
@@ -168,6 +168,7 @@ h3{
 }
 
 .date{
+    font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
 }
 

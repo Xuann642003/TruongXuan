@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -31,7 +31,22 @@
                 <img class="img-profile" src="images/profile-img.jpg" alt="">
                 <p class="name">THEHULK1709</p>
             </div> -->
-            <p class="date"></p>
+            <div class="navigation">
+                <div class="menuToggle"></div>
+                    <div class="menu">
+                        <ul>
+                            <li style="--i:0.1s;"><a href="https://www.facebook.com/xuan.spyasuo"><i class='bx bxl-facebook-circle'></i></a></li>
+                            <li style="--i:0.1s;"><a href="https://www.instagram.com/xuns_springs/"><i class='bx bxl-instagram-alt' ></i></a></li>
+                            <li style="--i:0.1s;"><a href="#" class="ballon" id="ballon"><i class='bx bxs-balloon'></i></a></li>
+                            <li style="--i:0.1s;"><p id="love" onclick="myFunction1()"><i class='bx bxs-happy-heart-eyes'></i></p></li>
+                            <li style="--i:0.1s;"><p id="time" onclick="myFunction()"><i class='bx bxs-time'></i></p></li>
+                        </ul>
+                    </div>
+            </div>
+            <p class="date" id="date" style="display:none"></p>
+            <br>
+            <br>
+            <br>
             <h1>Tran Truong Xuan <i class='bx bxs-heart heart-1'></i> </h1> 
             <div class="chu">
                 <span style="--color:#ffffff;--delay:0s">T</span>
@@ -47,7 +62,10 @@
             </div>
 			<br>
             <input type="text" id="textInput" name="textInput" class="animate-text" style="border-top:none;border-left:none;border-right:none;background-color: transparent;">
-			<br>   
+			<br> 
+            <br> 
+            <br> 
+            <p id="texts" style="font-size:30px;display:none">Tớ thích bạn Thảo rất nhiều </p>  
             <div class="cirle c4"><i class='bx bx-water wave-icon-1' ></i></div>
 			<br>
         </div>
@@ -56,22 +74,6 @@
                 <i class='bx bxs-heart heart-2'></i>
             </div>
         </div>
-    </div>
-    <div class="all1">
-        <div class="navigation">
-            <div class="menuToggle"></div>
-                <div class="menu">
-                    <ul>
-                        <li style="--i:0.1s;"><a href="https://www.facebook.com/xuan.spyasuo"><i class='bx bxl-facebook-circle'></i></a></li>
-                        <li style="--i:0.1s;"><a href="https://www.instagram.com/xuns_springs/"><i class='bx bxl-instagram-alt' ></i></a></li>
-                        <li style="--i:0.1s;"><a href="#" class="ballon" id="ballon"><i class='bx bxs-balloon'></i></a></li>
-                        <li style="--i:0.1s;"><a href="#"><i class='bx bxs-happy-heart-eyes' id="ic1" ></i></a></li>
-                    </ul>
-                </div>
-        </div>
-    </div>
-    <div class="icon-c">
-        <span>14/2 VUI VẺ</span>
     </div>
 </body>
 <script>
@@ -91,9 +93,24 @@
         document.getElementById("ballon").innerHTML = "<i class='bx bxs-ghost' id='ghost' ></i>"
     }
 
-    let ic1 = document.querySelector('.ic1');
-    ic1.onclick = function(){
-        window.location.href = 'https://www.youtube.com/';
+    function myFunction() {
+    var x = document.getElementById("date");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
     }
+    }
+
+    function myFunction1() {
+    var x = document.getElementById("texts");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    }
+
+
 </script>
 </html>
