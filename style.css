@@ -7,7 +7,7 @@
 }
 
 .all{
-    position: relative;
+    position: absolute;
     padding: 10px;
     width: 100%;
     height: 100vh;
@@ -39,7 +39,7 @@ h3{
     border-right: 2px solid blue;
     border-top: 2px solid red;
     border-bottom: 2px solid red;
-    padding-top: 150px;
+    padding-top: 50px;
     width: 70%;
     height: 70vh;
     text-align: center;
@@ -108,6 +108,17 @@ h3{
     z-index: 0;
     box-shadow: 0px 0px 20px rgb(255,255,255,0.8);
     animation: move-up-dow-x 5s infinite;
+}
+
+.c4{
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    right: 1100px;
+    z-index: 0;
+    box-shadow: 0px 0px 20px rgb(255,255,255,0.8);
+    animation: move-left-right 5s infinite;
+    margin-top:400px;
 }
 
 .wave-icon-1{
@@ -237,54 +248,4 @@ input[type="text"] {
         opacity: 1;
         transform: translateY(0);
     }
-}
-/* Modal styles */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
-}
-
-/* Modal content */
-.modal-content {
-    background-color: rgb(255,225,255,0.1);
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    text-align: center;
-    position: relative;
-    font-size:30px;
-    margin-top:150px;
-}
-
-/* Close button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#visitorCount {
-    position: fixed;
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
 }

@@ -1,0 +1,84 @@
+.heart-1 {
+    font-size: 110px;
+}
+
+.heart-2 {
+    font-size: 110px;
+    margin-top:130px;
+    animation:di 3s infinite alternate ease;
+    color:#ffffff;
+}
+
+@keyframes di {
+    form {
+        color:#ffffff;
+        margin-left: 50px;
+    }
+    to {
+        color:pink;
+        transform: rotate(360deg);
+        margin-left: 1000px;
+    }   
+}
+
+@keyframes di-reverse {
+    from {
+        margin-left: 200px;
+    }
+    to {
+        margin-left: 100px;
+    }   
+}
+.heart-1:hover {
+    background-image: linear-gradient(45deg, #ff0000, #FF1493);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.chu {
+    font-size:30px;
+}
+
+.chu>span {
+    font-size:4.5rem;
+    text-transform:uppercase;
+    animation:glow 3s ease-in-out infinite;
+    animation-delay:var(--delay);
+}
+@keyframes glow {
+    0%,100% {
+        color: var(--color);
+        text-shadow:0 0 10px #0652dd , 0 0 50px #0652dd , 0 0 100px #0652dd ;
+    }
+    10%, 90% {
+        color:#111;
+        text-shadow:none;
+    }
+}
+
+.traitim {
+    z-index: 1;
+    position:absolute;
+    width:1000px;
+    height:1000px; 
+}
+.tim1 {
+    width:200px;
+    height:200px;
+}
+
+.bx-heart-circle {
+    color:red;
+    font-size:100px;
+    margin-top:50px;
+    margin-left:50px;
+}
+
+.bx-heart-circle:active {
+    display:block;
+    transform:rotate(180deg);
+}
+
+.c4:hover , .c1:hover , .c2:hover , .c3:hover {
+    background:pink;
+}
